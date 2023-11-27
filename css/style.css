@@ -1,0 +1,721 @@
+/********** Template CSS **********/
+
+
+body{
+  
+    background-color: black;
+    
+}
+
+:root {
+  
+ 
+    --primary:  #ffc107;
+    --dark: #000 !important;
+}
+
+.hedrs
+{
+    font-family: "qatarheavy";
+    font-size: 50px;
+}
+
+@media (max-width: 576px) {
+   
+    .hedrs
+   {
+    font-family: "qatarheavy";
+    font-size: 50px;
+  }
+}
+
+
+
+.ser {
+   
+    transition: transform 250ms;
+    
+  }
+  
+  .ser:hover {
+    transform: translateY(-20px);
+  }
+
+
+/*** Button ***/
+.btn {
+    font-family: "qatarmed";
+    font-size: 20px;
+    transition: .5s;
+    
+}
+
+.btn-primary,
+.btn-secondary {
+    color: #FFFFFF;
+    box-shadow: inset 0 0 0 50px transparent;
+}
+
+.btn-primary:hover {
+    box-shadow: inset 0 0 0 0 var(--primary);
+}
+
+.btn-secondary:hover {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+}
+
+
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 30px;
+    height: 30px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+
+
+/*** Navbar ***/
+.navbar-dark .navbar-nav .nav-link {
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    color: #ffc451;
+    
+    outline: none;
+    transition: .5s;
+}
+.h_navbr
+{
+font-family: "qatarmed";
+    font-size: 18px;
+}
+.sticky-top.navbar-dark .navbar-nav .nav-link {
+    padding: 20px 0;
+    color: var(--primary) ;
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+.navbar-dark .navbar-toggler {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+.nav_img{
+    width: 120px;
+}
+.setting 
+{
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+   
+}
+
+.setting button i{
+    color: #000;
+}
+.setting button:hover i{
+color: #000;
+}
+.setting button .lng-btn
+{
+    display: none;
+    color: #000;
+    font-family: "qatarmed";
+    font-size: 25px;
+}
+.setting button:hover .lng-btn
+{
+   display: inline;
+}
+.setting button
+{
+
+   background-color: #ffc107;
+   color: #000;
+}
+
+
+
+@media (max-width: 799px) {
+    .setting 
+    {
+        top: 60%;
+        left: 0;
+        z-index: 1;
+       
+    }
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        position: relative;
+        background: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link.show,
+    .sticky-top.navbar-dark .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(256, 256, 256, .1);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-dark {
+        position: fixed;
+    }
+
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: 9px;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+
+    .sticky-top.navbar-dark .navbar-brand h1 {
+        color: var(--primary);
+    }
+}
+
+
+/*** About ***/
+
+.h_about
+{
+    font-family: "qatarheavy";
+    font-size: 40px;;
+}
+.p_about
+{
+    font-family: "qatarmed";
+    font-size: 15px;;
+}
+
+@media (max-width: 576px) {
+    .h_about
+    {
+        font-family: "qatarheavy";
+        font-size: 27px !important ;
+    }
+
+    .p_about
+    {
+        font-family: "qatarmed";
+        font-size: 16px !important;
+    }
+}
+
+.ctn{
+    background-color: #ffc107 ;
+    color: #000;
+   
+    
+}
+.ct{
+   
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+.ctn:hover{
+    background-color: black;
+   color: #ffc107;
+   border-style: solid;
+   border-color: #ffc107;
+}
+.ct:hover
+{
+    background-color: black;
+    color: #ffc107;
+    border-style: none;
+ 
+}
+/*** video ***/
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  
+  .video-wrapper object,
+  .video-wrapper embed,
+  .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+  }
+
+  /*** Service ***/
+.service-item {
+    position: relative;
+    height: 270px;
+    padding: 0 30px;
+    transition: .5s;
+    border-radius: 30px;
+    
+}
+
+.service-item .service-icon {
+    margin-bottom: 30px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+ 
+}
+
+.service-item .service-icon i {
+    transform: rotate(45deg);
+}
+
+.service-item a.btn {
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+    
+}
+
+.service-item:hover a.btn {
+    bottom: -24px;
+    opacity: 1;
+}
+.gallery .gallery-links {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.850);
+     
+  }
+  .gallery .gallery-links:hover {
+    position: absolute;
+    inset: 0;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.850);
+    
+  }
+
+.h_servics
+{
+    font-family: "qatarmed";
+    font-size: 37px;
+}
+.p_servics
+{
+    font-family: "qatarmed";
+    font-size: 20px;
+}
+
+
+@media (max-width: 576px) {
+    .h_servics
+    {
+        font-family: "qatarbold";
+        font-size: 30px ;
+    }
+
+    .p_servics
+    {
+        font-family: "qatarmed";
+        font-size: 18px !important;
+    }
+}
+
+
+/***** projects Start ***/
+.h_projects
+{
+    font-family: "qatarheavy";
+    font-size: 50px;
+}
+
+.anm-img {
+
+    transition: transform .1s;  
+    
+  }
+.anm-img:hover{
+    transform: scale(1.3);
+   
+}
+
+/***** projects End ***/
+
+
+/*** Reviews ***/
+.h_reviews{
+    font-family: "qatarheavy";
+    font-size: 50px;
+}
+.hdrs_reviews
+{
+    font-family: "qatarheavy";
+    font-size: 27px;
+
+}
+.p_reviews
+{
+    font-family: "qatarmed";
+    font-size: 15px;
+
+}
+.testimonial-carousel::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+      background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(32, 27, 27, 0) 100%);
+    z-index: 1;
+   
+}
+
+.testimonial-carousel::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to left, rgb(0, 0, 0) 0%, rgba(32, 27, 27, 0) 100%);
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 300px;
+    }
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    width: 350px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    opacity: 0;
+    transition: .5s;
+    z-index: 1;
+}
+
+.testimonial-carousel:hover .owl-nav {
+    width: 300px;
+    opacity: 1;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    position: relative;
+    color: var(--primary);
+    font-size: 45px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: var(--dark);
+}
+
+.testimonial-carousel .testimonial-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-carousel .testimonial-img .btn-square {
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonial-carousel .owl-item .testimonial-text {
+    margin-bottom: 30px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transform: scale(.8);
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-text {
+    transform: scale(1);
+}  
+
+
+/**** payment ****/
+
+.h_pay
+{
+    font-family: "qatarheavy";
+    font-size: 74px;
+
+}
+.p_pay
+{
+    font-family: "qatarmed";
+    font-size: 20px;
+}
+.ps{
+    font-family: "qatarbold";
+    font-size: 26px;
+}
+
+
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 45px;
+    z-index: 99;
+    background-color: #ffc107;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.55);
+}
+
+.back-to-top:hover {
+  
+    color: #000;
+}
+
+
+
+/* --- Pricing Table 4 --- */
+
+ .pricing-table.table-4 .ptable-header {
+    padding: 30px 0 50px 0;
+    background: #ffc107;
+    border-radius: 30px 30px 0 0;
+    
+}
+
+.pricing-table.table-4 .ptable-item.featured-item .ptable-header {
+    background: #ffc107;
+    border-radius: 30px 30px 0 0;
+}
+
+.pricing-table.table-4 .ptable-icon {
+    margin-bottom: 15px;
+}
+
+.pricing-table.table-4 .ptable-icon img {
+    display: inline-block;
+    color: black;
+    font-size: 45px;
+}
+
+.pricing-table.table-4 .ptable-title h2 {
+    color: black;
+
+    letter-spacing: 2px;
+}
+
+.pricing-table.table-4 .ptable-price h2 {
+    color: black;
+    font-size: 60px;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.pricing-table.table-4 .ptable-price h2 small {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-left: -15px;
+}
+
+
+
+.pricing-table.table-4 .ptable-body {
+    padding: 30px 0;
+    background: black;
+    border-radius: 30px 30px 0 0;
+    margin-top: -30px;
+    height: 190px;
+  
+}
+
+.pricing-table.table-4 .ptable-description ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.pricing-table.table-4 .ptable-description ul li {
+    color: #ffc451;
+    letter-spacing: 1px;
+    padding: 7px;
+}
+
+.pricing-table.table-4 .ptable-description ul li:last-child {
+    border: none;
+}
+
+.pricing-table.table-4 .ptable-footer {
+    background: black;
+    height: 80px;
+    border-radius: 0 0 30px 30px
+}
+
+
+.pricing-table.table-4 .ptable-action a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    letter-spacing: 2px;
+    background: #ffc107;
+    border-radius: 50px;
+}
+
+.pricing-table.table-4 .ptable-action a i {
+    margin-right: 5px;
+}
+
+.pricing-table.table-4 .ptable-action a:hover {
+    color: #ffc107;
+    background: black;
+    border-color: #ffc107;
+    border-radius: 50px;
+    border-style: solid;
+   
+}
+
+.pricing-table.table-4 .ptable-item.featured-item .ptable-action a {
+    color: black;
+    background: #ffc107;
+}
+
+.pricing-table.table-4 .ptable-item.featured-item .ptable-action a:hover {
+    color: #ffc107;
+    background: black;
+    border-color: #ffc107;
+    border-radius: 50px;
+    border-style: solid;
+}
+.pricing-table-title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 60px 0 15px 0;
+}
+
+.pricing-table-title:first-child {
+    margin-top: 30px;
+}
+
+.pricing-table-title h2 {
+    color: #ffc107;
+    letter-spacing: 2px;
+} 
+
+.pricing-table .ptable-header,
+.pricing-table .ptable-body,
+.pricing-table .ptable-footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+   
+    overflow: hidden;
+}
+
+.pricing-table .ptable-status ,
+.pricing-table .ptable-title,
+.pricing-table .ptable-price,
+.pricing-table .ptable-description,
+.pricing-table .ptable-action {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+  
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  }
+  
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+
+
+
+
+
+
